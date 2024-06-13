@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ChatBot</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <div class="chat-button" onclick="toggleChatBot()"><span></span></div>
+    
+    <div class="chatBot" style="display: none;">
+        <header>
+            <h2> ChatBot </h2>
+            <span alt="Close"
+                  id="cross"
+                  onclick="cancel()">X</span>
+        </header>
+         <ul class="chatbox">  <!--unordered list -->
+            <li class="chat-incoming chat">
+                <p>Hey! How can I assist you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea rows="0" cols="17"
+                      placeholder="Enter a message..." id="messageInput"></textarea>
+            <button id="sendBTN">Send</button>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="modal-close-button" onclick="toggleModel()">&times;</span>
+                <h1>Add What you want here.</h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+ 
+</html>
